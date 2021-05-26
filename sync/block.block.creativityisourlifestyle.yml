@@ -1,0 +1,30 @@
+uuid: 5a79e0ec-5457-446d-b998-d34eced8e9d1
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:paragraphs_container:ee59e37c-bde2-4fee-a4fc-4f7b151d8270'
+  module:
+    - block_content
+    - system
+  theme:
+    - exam
+id: creativityisourlifestyle
+theme: exam
+region: featured_top
+weight: 0
+provider: null
+plugin: 'block_content:ee59e37c-bde2-4fee-a4fc-4f7b151d8270'
+settings:
+  id: 'block_content:ee59e37c-bde2-4fee-a4fc-4f7b151d8270'
+  label: 'Creativity is our lifestyle'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false

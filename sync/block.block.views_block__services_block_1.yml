@@ -1,0 +1,29 @@
+uuid: d654d392-4e26-42d6-bde4-05aca5ea1baf
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.services
+  module:
+    - system
+    - views
+  theme:
+    - exam
+id: views_block__services_block_1
+theme: exam
+region: content
+weight: -6
+provider: null
+plugin: 'views_block:services-block_1'
+settings:
+  id: 'views_block:services-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false

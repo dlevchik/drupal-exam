@@ -1,0 +1,31 @@
+uuid: f817cab1-702a-4824-8900-25cb87447ba6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_name_and_surname
+    - paragraphs.paragraphs_type.name_and_surname
+  module:
+    - entity_reference_revisions
+    - user
+id: user.user.field_name_and_surname
+field_name: field_name_and_surname
+entity_type: user
+bundle: user
+label: 'Name and Surname'
+description: 'Your name and Surname'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      name_and_surname: name_and_surname
+    target_bundles_drag_drop:
+      name_and_surname:
+        enabled: true
+        weight: 2
+field_type: entity_reference_revisions

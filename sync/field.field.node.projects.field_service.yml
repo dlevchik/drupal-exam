@@ -1,0 +1,29 @@
+uuid: 75a7de24-c065-448d-b0f2-9cefaec1de1b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_service
+    - node.type.projects
+    - taxonomy.vocabulary.services
+id: node.projects.field_service
+field_name: field_service
+entity_type: node
+bundle: projects
+label: Service
+description: 'The service this project related to'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      services: services
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: services
+field_type: entity_reference

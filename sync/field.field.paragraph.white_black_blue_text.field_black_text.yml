@@ -1,0 +1,19 @@
+uuid: c3a5a212-b552-41d6-b755-a2163e434323
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_black_text
+    - paragraphs.paragraphs_type.white_black_blue_text
+id: paragraph.white_black_blue_text.field_black_text
+field_name: field_black_text
+entity_type: paragraph
+bundle: white_black_blue_text
+label: 'Black text'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

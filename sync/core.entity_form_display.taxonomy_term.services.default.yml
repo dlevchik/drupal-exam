@@ -1,0 +1,71 @@
+uuid: a047dab2-20e9-4518-8904-eb55f1943268
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.services.field_service_color
+    - field.field.taxonomy_term.services.field_service_description
+    - field.field.taxonomy_term.services.field_service_logo
+    - image.style.thumbnail
+    - taxonomy.vocabulary.services
+  module:
+    - color_field
+    - image
+    - path
+    - text
+id: taxonomy_term.services.default
+targetEntityType: taxonomy_term
+bundle: services
+mode: default
+content:
+  field_service_color:
+    weight: 5
+    settings:
+      cell_width: '10'
+      cell_height: '10'
+      cell_margin: '1'
+      box_width: '115'
+      box_height: '20'
+      columns: '16'
+    third_party_settings: {  }
+    type: color_field_widget_grid
+    region: content
+  field_service_description:
+    weight: 4
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_service_logo:
+    weight: 3
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  name:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 2
+    region: content
+    third_party_settings: {  }
+hidden:
+  description: true

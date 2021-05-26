@@ -1,0 +1,19 @@
+uuid: 328e9c56-d681-4675-8a46-7070a9a78146
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_gray_text
+    - paragraphs.paragraphs_type.about_link_paragraph
+id: paragraph.about_link_paragraph.field_gray_text
+field_name: field_gray_text
+entity_type: paragraph
+bundle: about_link_paragraph
+label: 'Gray text'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

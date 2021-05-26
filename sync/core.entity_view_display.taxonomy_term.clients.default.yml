@@ -1,0 +1,25 @@
+uuid: 599f5f91-5efd-4193-8043-935dea3a263d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.clients.field_client_logo
+    - taxonomy.vocabulary.clients
+  module:
+    - image
+id: taxonomy_term.clients.default
+targetEntityType: taxonomy_term
+bundle: clients
+mode: default
+content:
+  field_client_logo:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+hidden:
+  description: true

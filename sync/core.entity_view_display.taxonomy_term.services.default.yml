@@ -1,0 +1,36 @@
+uuid: 3c94107e-82d1-417f-a9b5-850301511b26
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.services.field_service_color
+    - field.field.taxonomy_term.services.field_service_description
+    - field.field.taxonomy_term.services.field_service_logo
+    - taxonomy.vocabulary.services
+  module:
+    - image
+    - text
+id: taxonomy_term.services.default
+targetEntityType: taxonomy_term
+bundle: services
+mode: default
+content:
+  field_service_description:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_service_logo:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+hidden:
+  description: true
+  field_service_color: true

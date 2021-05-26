@@ -1,0 +1,8 @@
+uuid: 3a7807b8-72cd-4786-9df3-d53f25b7aea6
+langcode: en
+status: true
+dependencies: {  }
+name: Services
+vid: services
+description: 'Taxonomy vocabulary to store Services company provide'
+weight: 0

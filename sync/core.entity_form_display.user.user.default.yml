@@ -1,0 +1,77 @@
+uuid: 378b1fcd-3d77-49a3-8ece-67d9869d2b7e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.user.user.field_name_and_surname
+    - field.field.user.user.field_position
+    - field.field.user.user.field_user_social_links
+    - field.field.user.user.user_picture
+    - image.style.thumbnail
+  module:
+    - image
+    - paragraphs
+    - social_media_links_field
+    - user
+_core:
+  default_config_hash: K-1rBM8mTIkFp9RqOC2tMRUukOQ1xbRCfSKK8dEddnA
+id: user.user.default
+targetEntityType: user
+bundle: user
+mode: default
+content:
+  account:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  contact:
+    weight: 6
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_name_and_surname:
+    type: entity_reference_paragraphs
+    weight: 2
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+    region: content
+  field_position:
+    weight: 3
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_user_social_links:
+    weight: 4
+    settings: {  }
+    third_party_settings: {  }
+    type: social_media_links_field_default
+    region: content
+  language:
+    weight: 5
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  timezone:
+    weight: 7
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  user_picture:
+    type: image_image
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden: {  }

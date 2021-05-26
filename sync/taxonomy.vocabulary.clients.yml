@@ -1,0 +1,8 @@
+uuid: 95818a67-2a4a-432e-a458-d9f55cd96b80
+langcode: en
+status: true
+dependencies: {  }
+name: Clients
+vid: clients
+description: 'Taxonomy vocabulary to store clients logos out company have worked with'
+weight: 0

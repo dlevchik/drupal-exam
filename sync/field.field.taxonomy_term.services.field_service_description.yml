@@ -1,0 +1,21 @@
+uuid: f84d6b9a-40f6-4dd1-8543-52529d3ce221
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_service_description
+    - taxonomy.vocabulary.services
+  module:
+    - text
+id: taxonomy_term.services.field_service_description
+field_name: field_service_description
+entity_type: taxonomy_term
+bundle: services
+label: 'Service Description'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

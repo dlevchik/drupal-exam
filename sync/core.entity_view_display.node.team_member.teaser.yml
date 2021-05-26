@@ -1,0 +1,32 @@
+uuid: 88a71c44-b275-43d6-9cd6-30b24fe768d4
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.team_member.field_team_member_user_profile
+    - node.type.team_member
+  module:
+    - user
+id: node.team_member.teaser
+targetEntityType: node
+bundle: team_member
+mode: teaser
+content:
+  field_team_member_user_profile:
+    type: entity_reference_entity_view
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      link: true
+      view_mode: default
+    third_party_settings: {  }
+  flag_like:
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  links: true
+  share_everywhere: true

@@ -1,0 +1,10 @@
+uuid: de57c52e-0311-4ec1-8c5e-49f1f56a4da0
+langcode: en
+status: true
+dependencies: {  }
+id: white_black_blue_text
+label: 'White-Black-Blue text'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

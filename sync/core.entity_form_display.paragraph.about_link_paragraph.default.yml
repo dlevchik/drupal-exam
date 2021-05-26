@@ -1,0 +1,43 @@
+uuid: 6f40bf15-b2fa-48d2-b228-8f4e97bdf430
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.about_link_paragraph.field_gray_text
+    - field.field.paragraph.about_link_paragraph.field_link
+    - field.field.paragraph.about_link_paragraph.field_title
+    - paragraphs.paragraphs_type.about_link_paragraph
+  module:
+    - link
+id: paragraph.about_link_paragraph.default
+targetEntityType: paragraph
+bundle: about_link_paragraph
+mode: default
+content:
+  field_gray_text:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_link:
+    weight: 2
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_title:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true

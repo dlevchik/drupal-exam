@@ -1,0 +1,22 @@
+uuid: 141d5538-f6b6-488b-9f75-6ed958f587fa
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_service_color
+    - taxonomy.vocabulary.services
+  module:
+    - color_field
+id: taxonomy_term.services.field_service_color
+field_name: field_service_color
+entity_type: taxonomy_term
+bundle: services
+label: 'Service Color'
+description: 'HEX color code that will be displayed on projects content type'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  opacity: 0
+field_type: color_field_type

@@ -1,0 +1,8 @@
+uuid: c98b106f-de14-4eba-9509-90c79dfa5ede
+langcode: en
+status: true
+dependencies: {  }
+id: map_container
+label: 'map container'
+revision: 0
+description: 'Block in order to contain leaflet maps'

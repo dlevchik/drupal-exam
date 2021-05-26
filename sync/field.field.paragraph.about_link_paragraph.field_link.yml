@@ -1,0 +1,28 @@
+uuid: b28eda8f-42c3-465c-9150-299c35699932
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_link
+    - paragraphs.paragraphs_type.about_link_paragraph
+  module:
+    - link
+id: paragraph.about_link_paragraph.field_link
+field_name: field_link
+entity_type: paragraph
+bundle: about_link_paragraph
+label: Link
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    attributes: {  }
+    uri: 'internal:/about'
+    title: 'MORE DETAILS'
+    options: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

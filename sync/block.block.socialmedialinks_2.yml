@@ -1,0 +1,129 @@
+uuid: 6741c97a-3779-4e90-b2df-5aaef261b707
+langcode: en
+status: true
+dependencies:
+  module:
+    - social_media_links
+  theme:
+    - exam
+id: socialmedialinks_2
+theme: exam
+region: footer_first
+weight: -11
+provider: null
+plugin: social_media_links_block
+settings:
+  id: social_media_links_block
+  label: 'Social Media Links'
+  provider: social_media_links
+  label_display: '0'
+  platforms:
+    whatsapp:
+      value: ''
+      description: ''
+      weight: '-34'
+    rss:
+      value: ''
+      description: ''
+      weight: '-33'
+    tumblr:
+      value: ''
+      description: ''
+      weight: '-32'
+    xing:
+      value: ''
+      description: ''
+      weight: '-31'
+    drupal:
+      value: ''
+      description: ''
+      weight: '-30'
+    vkontakte:
+      value: ''
+      description: ''
+      weight: '-29'
+    youtube_channel:
+      value: ''
+      description: ''
+      weight: '-28'
+    googleplus:
+      value: ''
+      description: ''
+      weight: '-27'
+    website:
+      value: ''
+      description: ''
+      weight: '-26'
+    instagram:
+      value: ''
+      description: ''
+      weight: '-25'
+    contact:
+      value: ''
+      description: ''
+      weight: '-24'
+    slideshare:
+      value: ''
+      description: ''
+      weight: '-23'
+    facebook:
+      value: 'yes'
+      description: ''
+      weight: '-22'
+    github:
+      value: ''
+      description: ''
+      weight: '-21'
+    youtube:
+      value: ''
+      description: ''
+      weight: '-20'
+    gitlab:
+      value: ''
+      description: ''
+      weight: '-19'
+    flickr:
+      value: ''
+      description: ''
+      weight: '-18'
+    twitter:
+      value: 'yes'
+      description: ''
+      weight: '-17'
+    vimeo:
+      value: ''
+      description: ''
+      weight: '-16'
+    linkedin:
+      value: 'yes'
+      description: ''
+      weight: '-15'
+    bitbucket:
+      value: ''
+      description: ''
+      weight: '-14'
+    pinterest:
+      value: ''
+      description: ''
+      weight: '-13'
+    behance:
+      value: ''
+      description: ''
+      weight: '-12'
+    email:
+      value: ''
+      description: ''
+      weight: '-11'
+  appearance:
+    orientation: h
+    show_name: 0
+    suggestion: ''
+  link_attributes:
+    target: '<none>'
+    rel: '<none>'
+  iconset:
+    style: 'fontawesome:2x'
+    installed_iconsets:
+      fontawesome:
+        examples: ''
+visibility: {  }

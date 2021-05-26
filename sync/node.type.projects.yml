@@ -1,0 +1,17 @@
+uuid: f9b1d8aa-3e67-46d7-a529-0920b3950925
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Projects
+type: projects
+description: 'Content-type to store company projects'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

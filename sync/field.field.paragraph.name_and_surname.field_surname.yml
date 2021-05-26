@@ -1,0 +1,19 @@
+uuid: a9a59a62-ea0a-406f-9b11-53d4f4197b3f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_surname
+    - paragraphs.paragraphs_type.name_and_surname
+id: paragraph.name_and_surname.field_surname
+field_name: field_surname
+entity_type: paragraph
+bundle: name_and_surname
+label: Surname
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

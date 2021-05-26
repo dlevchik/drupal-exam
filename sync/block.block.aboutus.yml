@@ -1,0 +1,30 @@
+uuid: fc0e5812-18c8-4be9-8f1d-e7adf1afe150
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:b410d4af-0322-4d58-8edc-8481534f693e'
+  module:
+    - block_content
+    - system
+  theme:
+    - exam
+id: aboutus
+theme: exam
+region: content
+weight: 0
+provider: null
+plugin: 'block_content:b410d4af-0322-4d58-8edc-8481534f693e'
+settings:
+  id: 'block_content:b410d4af-0322-4d58-8edc-8481534f693e'
+  label: 'About Us'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /about
+    negate: false

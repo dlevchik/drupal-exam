@@ -1,0 +1,21 @@
+uuid: 8e28cfdc-2109-4f0c-a018-c0ef5c59fe25
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.map_container
+    - field.storage.block_content.field_map_description
+  module:
+    - text
+id: block_content.map_container.field_map_description
+field_name: field_map_description
+entity_type: block_content
+bundle: map_container
+label: 'map description'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

@@ -1,0 +1,29 @@
+uuid: 9cb1898a-caef-4d59-b381-93bf8e4ea4f1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_team_member_user_profile
+    - node.type.team_member
+id: node.team_member.field_team_member_user_profile
+field_name: field_team_member_user_profile
+entity_type: node
+bundle: team_member
+label: 'Team Member user profile'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:user'
+  handler_settings:
+    include_anonymous: true
+    filter:
+      type: _none
+    target_bundles: null
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+field_type: entity_reference

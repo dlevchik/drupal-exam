@@ -1,0 +1,84 @@
+uuid: 931bc955-9a04-4cbe-97b0-8355917029ba
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.map_container
+    - field.field.block_content.map_container.field_map
+    - field.field.block_content.map_container.field_map_description
+  module:
+    - leaflet
+    - text
+id: block_content.map_container.default
+targetEntityType: block_content
+bundle: map_container
+mode: default
+content:
+  field_map:
+    weight: 2
+    settings:
+      map:
+        leaflet_map: 'OSM Mapnik'
+        height: 400
+        auto_center: true
+        map_position:
+          force: false
+          center:
+            lat: 0
+            lon: 0
+          zoom: 12
+          minZoom: 1
+          maxZoom: 18
+          zoomFiner: 0
+        locate: true
+        scroll_zoom_enabled: true
+        fullscreen_control: true
+      input:
+        show: true
+        readonly: false
+      toolbar:
+        position: topright
+        marker: defaultMarker
+        drawPolyline: true
+        drawRectangle: true
+        drawPolygon: true
+        drawCircle: false
+        editMode: true
+        dragMode: true
+        cutPolygon: false
+        removalMode: true
+      reset_map:
+        control: false
+        position: topright
+      path: '{"color":"#3388ff","opacity":"1.0","stroke":true,"weight":3,"fill":"depends","fillColor":"*","fillOpacity":"0.2","radius":"6"}'
+      geocoder:
+        control: false
+        settings:
+          position: topright
+          input_size: 25
+          providers: {  }
+          min_terms: 4
+          delay: 800
+          zoom: 16
+          popup: false
+          options: ''
+    third_party_settings: {  }
+    type: leaflet_widget_default
+    region: content
+  field_map_description:
+    weight: 1
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  info:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

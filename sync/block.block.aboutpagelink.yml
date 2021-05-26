@@ -1,0 +1,30 @@
+uuid: 065ffda5-de3b-4baf-8be6-14f767546244
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:paragraphs_container:2ba4e84b-626f-41c7-b004-9c61731f67e1'
+  module:
+    - block_content
+    - system
+  theme:
+    - exam
+id: aboutpagelink
+theme: exam
+region: content
+weight: -8
+provider: null
+plugin: 'block_content:2ba4e84b-626f-41c7-b004-9c61731f67e1'
+settings:
+  id: 'block_content:2ba4e84b-626f-41c7-b004-9c61731f67e1'
+  label: 'About page link'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false

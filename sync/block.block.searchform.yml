@@ -1,0 +1,21 @@
+uuid: ff46bc52-2732-4974-9178-d3de1f8413a5
+langcode: en
+status: true
+dependencies:
+  module:
+    - search
+  theme:
+    - exam
+id: searchform
+theme: exam
+region: primary_menu
+weight: -9
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: 'Search form'
+  provider: search
+  label_display: '0'
+  page_id: ''
+visibility: {  }

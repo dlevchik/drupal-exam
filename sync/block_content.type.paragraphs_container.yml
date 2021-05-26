@@ -1,0 +1,8 @@
+uuid: e6bb8cf3-fb40-410b-929c-2a3f3b1fd626
+langcode: en
+status: true
+dependencies: {  }
+id: paragraphs_container
+label: 'Paragraphs Container'
+revision: 0
+description: 'Block to contain one or more paragraphs in it'

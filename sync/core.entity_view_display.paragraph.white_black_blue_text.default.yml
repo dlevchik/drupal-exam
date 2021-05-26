@@ -1,0 +1,39 @@
+uuid: 71800657-6b47-4815-bfee-fc5f09e9ee94
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.white_black_blue_text.field_black_text
+    - field.field.paragraph.white_black_blue_text.field_blue_text
+    - field.field.paragraph.white_black_blue_text.field_white_text
+    - paragraphs.paragraphs_type.white_black_blue_text
+id: paragraph.white_black_blue_text.default
+targetEntityType: paragraph
+bundle: white_black_blue_text
+mode: default
+content:
+  field_black_text:
+    weight: 1
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_blue_text:
+    weight: 2
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_white_text:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden: {  }

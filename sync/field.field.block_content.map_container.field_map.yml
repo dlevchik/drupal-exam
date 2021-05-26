@@ -1,0 +1,22 @@
+uuid: 0f892325-c49d-4411-b2ca-12f4a6060d29
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.map_container
+    - field.storage.block_content.field_map
+  module:
+    - geofield
+id: block_content.map_container.field_map
+field_name: field_map
+entity_type: block_content
+bundle: map_container
+label: map
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  backend: geofield_backend_default
+field_type: geofield

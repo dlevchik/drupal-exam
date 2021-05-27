@@ -12,7 +12,7 @@ dependencies:
 id: aboutus
 theme: exam
 region: content
-weight: 0
+weight: -3
 provider: null
 plugin: 'block_content:b410d4af-0322-4d58-8edc-8481534f693e'
 settings:

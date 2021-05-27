@@ -38,11 +38,32 @@
                 margin: 10px 0;
 
                 &:hover{
-                    text-decoration: none;
+                    text-decoratisn: none;
                 }
             }
         }
     }
+
+    .pagination{
+        justify-content: center;
+
+        li .page-link{
+            border: none;
+            color: black;
+            background-color: transparent;
+        }
+
+        li.active {
+            width: 36px;
+            height: 36px;
+            text-align: center;
+
+            .page-link{
+                border-radius: 100px;
+                background-color: $gray-ce;
+            }
+        }
+     }
 }
 
 @media (max-width: 992px){

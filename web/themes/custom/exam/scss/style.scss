@@ -90,3 +90,32 @@ a {
         margin-right: -50%;
     }
 }
+
+.branding-container{
+    min-height: 80px;
+    line-height: 20px;
+    width: fit-content;
+    white-space: nowrap;
+    padding:  10px 15px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: $gray-37;
+
+    .navbar-brand{
+      font-size: 1.8rem;
+      color: $light-blue;
+    }
+
+    .site-name-slogan{
+      font-size: .9rem;
+      color: $white;
+    }
+  }
+
+  @media (max-width: 500px){
+    html{
+        font-size: 14px;
+    }
+}

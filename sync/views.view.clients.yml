@@ -177,7 +177,7 @@ display:
           thumbnail_position: ''
           grid: 4
           grid_medium: 2
-          grid_small: 1
+          grid_small: 2
           visible_items: 4
           preserve_keys: false
           image: ''

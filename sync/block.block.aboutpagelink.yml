@@ -12,7 +12,7 @@ dependencies:
 id: aboutpagelink
 theme: exam
 region: content
-weight: -8
+weight: -10
 provider: null
 plugin: 'block_content:2ba4e84b-626f-41c7-b004-9c61731f67e1'
 settings:

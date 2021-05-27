@@ -1,0 +1,11 @@
+footer.site-footer{
+    background-color: $gray-37;
+    padding: 50px 0;
+
+    .region-footer-first .container{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+    }
+}

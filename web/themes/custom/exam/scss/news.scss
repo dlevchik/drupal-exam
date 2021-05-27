@@ -4,8 +4,13 @@
         padding-top: 20px;
     }
 
-    .form-row label{
-        display: none;
+    .form-row {
+        .form-text, &, fieldset{
+            max-width: 100%;
+        }
+        label{
+            display: none;
+        }
     }
 
     .view-content.row{

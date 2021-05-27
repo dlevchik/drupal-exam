@@ -1,0 +1,20 @@
+.block-views-blockclients-block-1{
+    .slick-track{
+        padding: 30px 0;
+        display: flex;
+        align-items: center;
+    }
+
+    .slick-slide{
+        // width: 45vw;
+        .slide__content{
+            display: flex;
+            align-items: center;
+        }
+
+        img{
+            max-width: 100%;
+            height: auto;
+        }
+    }
+}

@@ -1,0 +1,102 @@
+body.path-contact-us{
+    .block-page-title-block h1.title,
+    .block > h2
+    {
+        margin-top: 30px;
+        &:before,
+        &:after {
+            background-color: transparent;
+            content: "";
+            display: none;
+            height: 0;
+            position: relative;
+            vertical-align: middle;
+            width: 0;
+        }
+    }
+
+    .block-page-title-block h1.title{
+        position: relative;
+
+        &:after {
+            background-color: $gray-ce;
+            width: 100px;
+            position: relative;
+            content: "";
+            display: block;
+            bottom: 0;
+            height: 3px;
+            z-index: 5;
+            margin-right: 0;
+            margin: 0 auto;
+            left: 0;
+        }
+    }
+
+    main .container{
+        display: flex;
+        padding: 30px 0;
+
+        > div {
+            width: 47%;
+        }
+
+        .block-webform-block{
+            margin-right: 30px;
+            display: flex;
+            align-items: center;
+
+            fieldset label{
+                display: none;
+            }
+
+            input, textarea{
+                border-radius: 0;
+                padding: 10px 7px;
+                height: auto;
+                resize: vertical;
+
+                &::placeholder{
+                    text-transform: uppercase;
+                }
+            }
+
+            .webform-button--submit{
+                border-radius: 0;
+                padding: 10px 7px;
+                text-transform: uppercase;
+                background-color: $red;
+                border: none;
+                color: $white;
+                margin-top: 25px;
+            }
+        }
+
+        #block-australia{
+            h2{
+                text-align: inherit;
+                font-size: 1.2rem;
+                font-weight: bold;
+                margin: 0;
+            }
+
+            p{
+                margin: 0;
+            }
+
+            .field--name-field-map{
+                margin-top: 30px;
+            }
+        }
+    }
+}
+
+@media (max-width: 1200px){
+    body.path-contact-us main .container{
+        flex-direction: column;
+        > div{
+            text-align: center;
+            width: 100%;
+        }
+    } 
+}

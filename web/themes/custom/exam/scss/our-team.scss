@@ -1,0 +1,90 @@
+.block-views-blockour-team-block-1{
+    .view-content.row{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        padding: 50px 0;
+
+        .views-row{
+            max-width: 24%;
+            margin: 20px 0;
+            text-align: center;
+            text-transform: uppercase;
+
+            .views-field-user-picture img{
+                max-width: 100%;
+                height: auto;
+            }
+
+            .paragraph--type--name-and-surname{
+                font-size: 1.2rem;
+                margin-top: 15px;
+
+                 .field{
+                    display: inline;
+                }
+            }
+
+            .views-field-field-position{
+                color: $gray-ce;
+                font-size: .8rem;
+                margin-bottom: 10px;
+            }
+
+            .views-field-view-node a{
+                display: inline-block;
+                background-color: $gray-800;
+                color: white;
+                cursor: pointer;
+                padding: 7px 5px;
+                margin-bottom: 5px;
+
+                &:hover{
+                    text-decoration: none;
+                }
+            }
+
+            .team-footer{
+                display: flex;
+                align-items: center;
+                flex-wrap: wrap;
+                justify-content: space-around;
+
+                .flag-like {
+                    display: flex;
+                    align-items: center;
+
+                    a {
+                        font-size: 0;
+                        display: inline-block;
+                        display: inline-block;
+                        background-image: url(../images/icons/like-icon.png);
+                        background-position: center center;
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                        width: 25px;
+                        height: 25px;
+                    }
+
+                    &.action-unflag a{
+                        background-image: url(../images/icons/liked-icon.png);
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 992px){
+    .block-views-blockour-team-block-1 .view-content.row .views-row{
+        max-width: 48%;
+    }
+}
+
+@media (max-width: 500px){
+    .block-views-blockour-team-block-1 .view-content.row .views-row{
+        max-width: 90%;
+    }
+}

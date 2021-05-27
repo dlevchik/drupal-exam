@@ -30,3 +30,18 @@ function exam_form_system_theme_settings_alter(&$form, FormStateInterface $form_
     'bg-transparent' => t('Transparent'),
   );
 }
+
+//function exam_preprocess_views_view_fields(&$vars) {
+//  $view = $vars['view'];
+//  foreach ($view->field as $id => $field) {
+//    if ($id == 'field_service_color') {
+//      $content = $vars['fields']['field_service']->content;
+//      $service_color = trim(strip_tags($vars['fields']['field_service_color']->content));
+//      $vars['fields']['field_service']->content = '<div style="color:' . $service_color . '">' . $content . '</div>';
+//    }
+//  }
+//}
+
+//function exam_preprocess_views_view_field(&$variables) {
+//  $variables['output'] = $variables['field']->advancedRender($variables['row']);
+//}

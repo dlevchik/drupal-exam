@@ -1,0 +1,28 @@
+.social-media-links--platforms{
+  margin: 0;
+  
+  .fa{
+    display: none;
+  }
+
+  li > a{
+    display: inline-block;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 25px;
+    height: 25px;
+  }
+
+  .social-media-link-icon--facebook{
+    background-image: url(../images/Social/fb.png);
+  }
+
+  .social-media-link-icon--twitter{
+    background-image: url(../images/Social/twit.png);
+  }
+
+  .social-media-link-icon--linkedin{
+    background-image: url(../images/Social/in.png);
+  }
+}

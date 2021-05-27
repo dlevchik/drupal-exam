@@ -11,6 +11,7 @@ Description: Bootstrap 4 with Sass
 
 body {
     background: $white;
+    font-family: 'Poppins', sans-serif;
 }
 
 
@@ -26,7 +27,7 @@ a {
 }
 
 .site-footer {
-    //background: $accent-shade !important;
+    // background: $accent-shade !important;
 }
 
 .menu--main li a {

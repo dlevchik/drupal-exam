@@ -5,6 +5,8 @@ global-styling:
     js/bootstrap.min.js: {}
     js/global.js: {}
   css:
+    theme:
+      "https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap": { external: true }
     component:
       css/style.css: {}
   dependencies:

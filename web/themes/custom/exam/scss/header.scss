@@ -1,0 +1,156 @@
+.header{
+  .navbar .container{
+    align-items: stretch;
+    box-shadow: 0 10px 15px -15px $black;
+    min-height: 80px;
+
+    .branding-container{
+      line-height: 20px;
+      width: fit-content;
+      white-space: nowrap;
+      padding:  10px 15px; 
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background-color: $gray-37;
+
+      .navbar-brand{
+        font-size: 1.8rem;
+        color: $light-blue;
+      }
+
+      .site-name-slogan{
+        font-size: .9rem;
+        color: $white;
+      }
+    }
+
+    .block-menu{
+      height: 100%;
+      margin-right: auto;
+      margin-left: 10px;
+
+      .navbar-nav{
+        align-items: stretch;
+        height: 100%;
+
+        a.nav-link{
+          color: $gray-800;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          height: 100%;
+
+          &.is-active{
+            position: relative;
+            
+            &::after{
+              position: absolute;
+              display: inline-block;
+              content: "";
+              width: 100%;
+              left: 0;
+              right: 0;
+              bottom: 0;
+              height: 5px;
+              background-color: $light-blue;
+            }
+          }
+
+          &.nav-link--{
+            font-size: 0;
+            background-image: url("../images/Homepage-menu.png");
+            background-size: 25px 25px;
+            background-position: center center;
+            background-repeat: no-repeat;
+            min-width: 35px;
+          }
+
+          &:hover{
+            color: $light-blue;
+          }
+        }
+      }
+    }
+
+    .block-social-media-links{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .social-media-links--platforms{
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+
+    .block-search-form-block{
+      .search-form#search-block-form{
+        align-items: stretch;
+        flex-wrap: nowrap;
+
+        fieldset.form-type-search{
+          max-width: 150px;
+          width: 80%;
+          margin: 0;
+          padding: 0;
+          .form-search{
+            border-radius: .25rem 0 0 .25rem;
+          }
+        }
+        .form-actions{
+          width: 30px;
+          margin: 0;
+          padding: 0;
+          align-self: unset;
+
+          button{
+            font-size: 0;
+            width: 100%;
+            height: 100%;
+            background-color: transparent;
+            border: 1px solid $gray-ce;
+            background-color: transparent;
+            background: url(../images/icons/search-icon.png);
+            background-size: 80% 80%;
+            background-position: center center;
+            background-repeat: no-repeat;
+            margin-left: -1px;
+            border-radius: 0 .25rem .25rem 0;
+          }
+        }
+      }
+    }
+    
+    .navbar-toggler{
+      align-self: center;
+      margin-right: 30px;
+      position: absolute;
+      right: 30px;
+      top: 15px;
+    }
+  }
+}
+
+@media (max-width: 992px){
+  .header{
+    .navbar .container{
+      flex-direction: column;
+      position: relative;
+
+      .block-menu .navbar-nav a.nav-link.nav-link--{
+        min-height: 48px;
+      }
+
+      .block-search-form-block .content{
+        width: 100%;
+
+        .search-form#search-block-form{
+          justify-content: center;
+        }
+      }
+    }
+  }
+}

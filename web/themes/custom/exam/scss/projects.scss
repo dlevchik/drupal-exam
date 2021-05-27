@@ -1,4 +1,8 @@
 .block-views-blockprojects-block-1{
+    .content{
+        background-image: repeating-linear-gradient(-45deg, $gray-ce .1px, transparent 1px, transparent 10px);
+    }
+
     .view-content.row{
         display: flex;
         flex-direction: row;
@@ -6,7 +10,6 @@
         justify-content: space-around;
         align-items: center;
         padding: 50px 0;
-        background-image: repeating-linear-gradient(-45deg, $gray-ce .1px, transparent 1px, transparent 10px);
 
         .views-row{
             max-width: 24%;

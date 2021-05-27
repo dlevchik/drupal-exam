@@ -1,0 +1,46 @@
+#block-aboutpagelink{
+    .paragraph--type--about-link-paragraph{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        margin: 50px 0;
+        padding: 10px 0;
+        border-top: 5px solid $gray-800;
+        border-bottom: 5px solid $light-blue;
+        text-transform: uppercase;
+
+        .field--name-field-title{
+            font-weight: bold;
+            font-size: 1.5rem;
+            color: $black;
+        }
+
+        .field--name-field-gray-text{
+            color: $gray-ce;
+            font-weight: 300;
+            text-align: center;
+        }
+
+        .field--name-field-link{
+            a{
+                display: inline-block;
+                background-color: $light-blue;
+                color: white;
+                cursor: pointer;
+                padding: 7px 5px;
+
+                &:hover{
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1220px) {
+    #block-aboutpagelink .paragraph--type--about-link-paragraph{
+        flex-direction: column;
+        justify-content: center;
+    }
+}

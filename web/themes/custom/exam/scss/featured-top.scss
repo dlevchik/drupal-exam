@@ -1,0 +1,42 @@
+.featured-top{
+    max-width: 100%;
+    //aspect-ratio: 1920/700;
+    min-height: 500px;
+    margin: 0;
+    background-image: url(../images/header.png);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+
+    .region-featured-top{
+        min-height: 500px;
+    }
+    
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #block-creativityisourlifestyle{
+        text-transform: uppercase;
+        max-width: 430px;
+
+        .field--name-field-white-text{
+            color: $white;
+            font-size: 4rem;
+            line-height: 3rem;
+        }
+
+        .field--name-field-black-text{
+            color: $gray-800;
+            font-size: 2.7rem;
+            line-height: 3rem;
+        }
+
+        .field--name-field-blue-text{
+            color: $light-blue;
+            font-size: .8rem;
+        }
+    }
+}

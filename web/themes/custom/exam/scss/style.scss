@@ -59,3 +59,34 @@ a {
 .slick>div {
     margin: 0 15px;
 }
+
+// custom
+
+.block > h2,
+.block .container > h2,
+.block-page-title-block h1{
+    overflow: hidden;
+    text-align: center;
+    text-transform: uppercase;
+      
+    &:before,
+    &:after {
+        background-color: $gray-ce;
+        content: "";
+        display: inline-block;
+        height: 1px;
+        position: relative;
+        vertical-align: middle;
+        width: 50%;
+    }
+      
+    &:before {
+        right: 0.5em;
+        margin-left: -50%;
+    }
+    
+    &:after {
+        left: 0.5em;
+        margin-right: -50%;
+    }
+}

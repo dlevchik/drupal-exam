@@ -1,0 +1,51 @@
+.block-views-blockservices-block-1{
+    .view-content.row{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        padding: 50px 0;
+
+        .views-row{
+            max-width: 24%;
+            margin: 20px 0;
+            text-align: center;
+            text-transform: uppercase;
+
+            .views-field-name{
+                font-size: 1.5rem;
+                margin: 10px 0;
+            }
+
+            .views-field-field-service-description{
+                font-size: .8rem;
+                color: $gray-ce;
+            }
+
+            .views-field-view-taxonomy-term a{
+                display: inline-block;
+                background-color: $light-blue;
+                color: white;
+                cursor: pointer;
+                padding: 7px 5px;
+
+                &:hover{
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 992px){
+    .block-views-blockservices-block-1 .view-content.row .views-row{
+        max-width: 48%;
+    }
+}
+
+@media (max-width: 500px){
+    .block-views-blockservices-block-1 .view-content.row .views-row{
+        max-width: 100%;
+    }
+}
